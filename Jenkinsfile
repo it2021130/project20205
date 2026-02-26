@@ -22,8 +22,8 @@ stages {
     stage('Test') {
         steps {
             sh '''
-                echo "Skipping tests to proceed with deployment"
-                ./mvnw install -DskipTest
+                echo "Start testing"
+                ./mvnw test
             '''
         }
     }
